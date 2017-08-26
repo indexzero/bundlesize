@@ -4,7 +4,7 @@ const server = express()
 const bodyParser = require('body-parser')
 const querystring = require('querystring')
 const bytes = require('bytes')
-const { get, set } = require('./firebase')
+const { get, set } = require('./persist')()
 const github = require('./github')
 
 server.use(bodyParser.json())
